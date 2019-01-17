@@ -5,6 +5,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../share/share.module';
 import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
+import { ChichitoComponent } from './chichito/chichito.component';
 
 @NgModule({
 
@@ -12,7 +13,8 @@ import { PAGES_ROUTES } from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        PagesComponent
+        PagesComponent,
+        ChichitoComponent
     ],
     exports:[
         DashboardComponent,
