@@ -5,7 +5,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../share/share.module';
 import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
-import { ChichitoComponent } from './chichito/chichito.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
 @NgModule({
 
@@ -14,7 +15,8 @@ import { ChichitoComponent } from './chichito/chichito.component';
         ProgressComponent,
         Graficas1Component,
         PagesComponent,
-        ChichitoComponent
+        GraficoDonaComponent
+        
     ],
     exports:[
         DashboardComponent,
@@ -23,7 +25,8 @@ import { ChichitoComponent } from './chichito/chichito.component';
     ],
     imports:[
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        ChartsModule
     ]
 })
 
